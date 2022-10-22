@@ -176,6 +176,9 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
         return cell
         ```
     - (Delete) Remove an item from the Saved table
+
+
+
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
