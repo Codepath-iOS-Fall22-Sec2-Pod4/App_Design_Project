@@ -1,0 +1,6 @@
+framework module Pods_Visual_Fitness {
+  umbrella header "Pods-Visual Fitness-umbrella.h"
+
+  export *
+  module * { export * }
+}
