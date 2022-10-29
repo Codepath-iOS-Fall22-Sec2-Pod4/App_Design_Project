@@ -29,10 +29,10 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
  
 **Required Must-have Stories**
  
-* User can able to see a 3d human skeleton and can click on it to get the result. 
-* Log in/ sign up
-* Detailed information
-* Can be able to save the articles or videos.
+[ ] User can able to see a 3d human skeleton and can click on it to get the result. 
+[x] Log in/ sign up
+[ ] Detailed information
+[ ] Can be able to save the articles or videos.
  
 **Optional Nice-to-have Stories**
  
@@ -43,7 +43,7 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
 * Launch screen
   * Will show the 3d human skeleton body
  * Log in/ Sign up screen
-  * User can create an account to save the results.
+  [x]User can create an account to save the results.
  
 ### 3. Navigation
  
@@ -56,7 +56,7 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
 **Flow Navigation** (Screen to Screen)
  
 * Launch screen
-  * Log in/ Sign up screen
+  [x] Log in/ Sign up screen
  
 * profile
   * Saved data
