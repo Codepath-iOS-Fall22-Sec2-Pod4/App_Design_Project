@@ -61,6 +61,12 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
 * profile
   * Saved data
   * Log out
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://g.recordit.co/KgDMHzHGFm.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
  
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
