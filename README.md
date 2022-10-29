@@ -43,7 +43,7 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
 * Launch screen
   * Will show the 3d human skeleton body
  * Log in/ Sign up screen
-  - [x]User can create an account to save the results.
+  - [x] User can create an account to save the results.
  
 ### 3. Navigation
  
