@@ -2,28 +2,26 @@
 //  FeedViewController.swift
 //  Visual Fitness
 //
-//  Created by Krina Patel on 10/28/22.
+//  Created by Akil Bhuiyan on 10/28/22.
 //
 
 import UIKit
-import Parse
 
 class FeedViewController: UIViewController {
 
-    @IBAction func onLogout(_ sender: Any) {
-        PFUser.logOut()
-                let main = UIStoryboard(name: "Main", bundle: nil)
-                let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
-                guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else { return }
-                
-                delegate.window?.rootViewController = loginViewController
+    @IBOutlet weak var hand1: UIButton!
+    @IBOutlet weak var textt: UILabel!
+    @IBAction func BP(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+        textt.text = "You pressed Hand"
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+        // Do any additional setup after loading the view.
+        
+        
+    
     
 
     /*
