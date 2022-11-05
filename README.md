@@ -29,7 +29,7 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
  
 **Required Must-have Stories**
  
-- [ ] User can able to see a 3d human skeleton and can click on it to get the result. 
+- [x] User can able to see a 3d human skeleton and can click on it to get the result. 
 - [x] Log in/ sign up
 - [ ] Detailed information
 - [ ] Can be able to save the articles or videos.
@@ -57,6 +57,8 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
  
 * Launch screen
   - [x] Log in/ Sign up screen
+  - [x] User can see a home screen
+  - [x] User can tap on the body part
  
 * profile
   * Saved data
@@ -66,7 +68,7 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/KgDMHzHGFm.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/h5cDtyE9vG.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
  
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
