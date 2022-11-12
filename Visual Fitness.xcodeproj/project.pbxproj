@@ -10,6 +10,7 @@
 		0AC20B54E7CFA79509F84885 /* Pods_Visual_Fitness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6758A2430795A90E5380DA /* Pods_Visual_Fitness.framework */; };
 		45B5428FEB791E467E34637B /* Pods_Visual_FitnessTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C18AA1021400FDB636DFB5 /* Pods_Visual_FitnessTests.framework */; };
 		66EBD0A2FC75D0C7C266E96C /* Pods_Visual_Fitness_Visual_FitnessUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1A762A79F06F5F0034C399 /* Pods_Visual_Fitness_Visual_FitnessUITests.framework */; };
+		6D72A6ED291F0864009DBDD0 /* MucleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D72A6EC291F0864009DBDD0 /* MucleTableViewCell.swift */; };
 		6D856796290C1BA500B2ABE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D856795290C1BA500B2ABE5 /* AppDelegate.swift */; };
 		6D856798290C1BA500B2ABE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D856797290C1BA500B2ABE5 /* SceneDelegate.swift */; };
 		6D85679A290C1BA500B2ABE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D856799290C1BA500B2ABE5 /* ViewController.swift */; };
@@ -45,6 +46,7 @@
 		11C18AA1021400FDB636DFB5 /* Pods_Visual_FitnessTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Visual_FitnessTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E7CB8040425F101FE2F61D3 /* Pods-Visual Fitness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visual Fitness.release.xcconfig"; path = "Target Support Files/Pods-Visual Fitness/Pods-Visual Fitness.release.xcconfig"; sourceTree = "<group>"; };
 		65ACC1919E6C8CDA0BD357F5 /* Pods-Visual FitnessTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visual FitnessTests.debug.xcconfig"; path = "Target Support Files/Pods-Visual FitnessTests/Pods-Visual FitnessTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D72A6EC291F0864009DBDD0 /* MucleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MucleTableViewCell.swift; sourceTree = "<group>"; };
 		6D856792290C1BA500B2ABE5 /* Visual Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visual Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D856795290C1BA500B2ABE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D856797290C1BA500B2ABE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				6D8567A3290C1BA600B2ABE5 /* Info.plist */,
 				6D8567C5290C25DD00B2ABE5 /* LoginViewController.swift */,
 				6D8567C7290C25EF00B2ABE5 /* FeedViewController.swift */,
+				6D72A6EC291F0864009DBDD0 /* MucleTableViewCell.swift */,
 			);
 			path = "Visual Fitness";
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 			files = (
 				6D8567C6290C25DD00B2ABE5 /* LoginViewController.swift in Sources */,
 				6D85679A290C1BA500B2ABE5 /* ViewController.swift in Sources */,
+				6D72A6ED291F0864009DBDD0 /* MucleTableViewCell.swift in Sources */,
 				6D8567C8290C25EF00B2ABE5 /* FeedViewController.swift in Sources */,
 				6D856796290C1BA500B2ABE5 /* AppDelegate.swift in Sources */,
 				6D856798290C1BA500B2ABE5 /* SceneDelegate.swift in Sources */,
