@@ -69,8 +69,7 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
 Here's a walkthrough of implemented user stories:
 
 <img src='http://g.recordit.co/h5cDtyE9vG.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src="Screenshot 2022-11-11 at 11.16.38 PM.jpg" alt="Alt text" title="Optional title">
-<img src="Screenshot 2022-11-11 at 11.17.42 PM (1).jpg" alt="Alt text" title="Optional title">
+
 
  
 ## Wireframes
