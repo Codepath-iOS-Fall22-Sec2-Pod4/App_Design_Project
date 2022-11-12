@@ -125,44 +125,8 @@
                     <view key="view" contentMode="scaleToFill" id="GYd-YA-ZTf">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iNj-Mb-GQ9">
-                                <rect key="frame" x="0.0" y="91" width="390" height="719"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="114" id="UmI-fz-9Df" customClass="MucleTableViewCell" customModule="Visual_Fitness" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="390" height="114"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UmI-fz-9Df" id="tlI-8s-SjG">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="114"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mucle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNA-8Y-UKH">
-                                                    <rect key="frame" x="169" y="44" width="59" height="27"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="mucleLabel" destination="YNA-8Y-UKH" id="PBh-eo-J7j"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="N3n-Hb-hHb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="iNj-Mb-GQ9" firstAttribute="top" secondItem="N3n-Hb-hHb" secondAttribute="top" id="DJY-G9-FRn"/>
-                            <constraint firstItem="iNj-Mb-GQ9" firstAttribute="centerX" secondItem="GYd-YA-ZTf" secondAttribute="centerX" id="VhI-Rt-C4K"/>
-                            <constraint firstItem="iNj-Mb-GQ9" firstAttribute="bottom" secondItem="N3n-Hb-hHb" secondAttribute="bottom" id="hAX-9E-2he"/>
-                            <constraint firstItem="iNj-Mb-GQ9" firstAttribute="centerX" secondItem="GYd-YA-ZTf" secondAttribute="centerX" id="jer-iM-DXX"/>
-                            <constraint firstItem="N3n-Hb-hHb" firstAttribute="trailing" secondItem="iNj-Mb-GQ9" secondAttribute="trailing" id="k81-6S-FtT"/>
-                            <constraint firstItem="iNj-Mb-GQ9" firstAttribute="leading" secondItem="N3n-Hb-hHb" secondAttribute="leading" id="lS9-qP-FV3"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QnC-Qi-0JX">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="O0n-8g-pG3">
@@ -171,9 +135,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="tableView" destination="iNj-Mb-GQ9" id="cYL-UK-NQz"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sGC-0U-Joh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
