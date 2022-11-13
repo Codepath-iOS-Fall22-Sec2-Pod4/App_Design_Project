@@ -31,8 +31,8 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
  
 - [x] User can able to see a 3d human skeleton and can click on it to get the result. 
 - [x] Log in/ sign up
-- [ ] Detailed information
-- [ ] Can be able to save the articles or videos.
+- [x] User can tap on a body part and present a pop up
+- [x] user can see a list of excersices when pressing on the body part
  
 **Optional Nice-to-have Stories**
  
@@ -69,8 +69,8 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
 Here's a walkthrough of implemented user stories:
 
 <img src='http://g.recordit.co/h5cDtyE9vG.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img width="1052" alt="Screenshot 2022-11-11 at 11 16 38 PM" src="https://user-images.githubusercontent.com/83603669/201457067-9c341c80-8e19-4f2f-8a3a-63cd11c44a99.png">
-<img width="610" alt="Screenshot 2022-11-11 at 11 17 42 PM" src="https://user-images.githubusercontent.com/83603669/201457076-c901a017-a11c-4bb1-bd5e-a45294fff46e.png">
+
+## Product Demo Video
 
  
 ## Wireframes
