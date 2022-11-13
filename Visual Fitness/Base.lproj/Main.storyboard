@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e8p-oK-4UQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e8p-oK-4UQ">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="width" constant="256" id="SZp-ua-GPD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d69-fh-6gf">
                                 <rect key="frame" x="67" y="511" width="256" height="26"/>
@@ -55,7 +55,7 @@
                                     <constraint firstAttribute="height" constant="34" id="YOv-C5-ZXS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pz-cA-5fO">
                                 <rect key="frame" x="77" y="613" width="71" height="30"/>
@@ -178,7 +178,13 @@
                         <viewLayoutGuide key="safeArea" id="N3n-Hb-hHb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="QnC-Qi-0JX"/>
+                    <navigationItem key="navigationItem" id="QnC-Qi-0JX">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Jfk-64-XZm">
+                            <connections>
+                                <action selector="onLogout:" destination="0JH-gt-Zxy" id="L9t-up-5e8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="hand1" destination="dCQ-mO-uHd" id="Kyd-0H-rUs"/>
                         <outlet property="textt" destination="nvG-nt-S0F" id="qun-zz-DJV"/>
@@ -206,7 +212,7 @@
         <!--Navigation Controller-->
         <scene sceneID="0is-6Z-nKU">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7aw-7B-aPX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="7aw-7B-aPX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cPZ-vX-dNj">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
