@@ -33,6 +33,8 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
 - [x] Log in/ sign up
 - [x] User can tap on a body part and present a pop up
 - [x] user can see a list of excersices when pressing on the body part
+- [x] user can see two button on the top of the picture
+- [x] user can press the two button and is presented with a list of exercises
  
 **Optional Nice-to-have Stories**
  
