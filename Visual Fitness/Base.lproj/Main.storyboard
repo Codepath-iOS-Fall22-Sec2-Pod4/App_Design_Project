@@ -176,9 +176,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcI-v2-gXv">
+                                <rect key="frame" x="10" y="101" width="74" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="Rye-vc-jbH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Cardio"/>
+                                <connections>
+                                    <action selector="cardio:" destination="0JH-gt-Zxy" eventType="touchUpInside" id="Qgk-nD-tV9"/>
+                                    <segue destination="fqt-U4-aWU" kind="presentation" id="gcT-tG-AUS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N3n-Hb-hHb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CcI-v2-gXv" firstAttribute="top" secondItem="N3n-Hb-hHb" secondAttribute="top" constant="10" id="8ky-lr-4is"/>
+                            <constraint firstItem="CcI-v2-gXv" firstAttribute="leading" secondItem="N3n-Hb-hHb" secondAttribute="leading" constant="10" id="9eT-Wb-cBN"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QnC-Qi-0JX">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="Jfk-64-XZm">
@@ -305,6 +321,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Rc-p7-qwo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2656.9230769230767" y="-21.327014218009477"/>
+        </scene>
+        <!--Cardio Table View Controller-->
+        <scene sceneID="z3G-3y-Qjk">
+            <objects>
+                <tableViewController id="fqt-U4-aWU" customClass="CardioTableViewController" customModule="Visual_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="v3E-ME-1w2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardioCell" rowHeight="94" id="wr3-NP-LiB" customClass="CardioTableViewCell" customModule="Visual_Fitness" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="390" height="94"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wr3-NP-LiB" id="mz7-so-gxU">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="94"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaB-81-UiL">
+                                            <rect key="frame" x="8" y="9" width="374" height="23"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instruction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pea-CM-fUY">
+                                            <rect key="frame" x="8" y="40" width="374" height="21.666666666666671"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="pea-CM-fUY" firstAttribute="top" secondItem="HaB-81-UiL" secondAttribute="bottom" constant="8" id="Lje-aW-WQ7"/>
+                                        <constraint firstItem="pea-CM-fUY" firstAttribute="leading" secondItem="mz7-so-gxU" secondAttribute="leading" constant="8" id="MNp-iI-wgG"/>
+                                        <constraint firstItem="HaB-81-UiL" firstAttribute="leading" secondItem="mz7-so-gxU" secondAttribute="leading" constant="8" id="g37-Ml-gMT"/>
+                                        <constraint firstAttribute="trailing" secondItem="pea-CM-fUY" secondAttribute="trailing" constant="8" id="qaS-Z2-pvc"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="pea-CM-fUY" secondAttribute="bottom" id="waT-JL-MMu"/>
+                                        <constraint firstItem="HaB-81-UiL" firstAttribute="top" secondItem="mz7-so-gxU" secondAttribute="top" constant="9" id="wmL-kN-sPt"/>
+                                        <constraint firstAttribute="trailing" secondItem="HaB-81-UiL" secondAttribute="trailing" constant="8" id="zdy-eb-Stz"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cardioExercise" destination="HaB-81-UiL" id="2Fm-gR-u0Q"/>
+                                    <outlet property="cardioInstruction" destination="pea-CM-fUY" id="dkC-3s-StT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fqt-U4-aWU" id="bjH-6M-x1w"/>
+                            <outlet property="delegate" destination="fqt-U4-aWU" id="c0H-jg-PYU"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDX-yU-nFA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1901.5384615384614" y="-711.61137440758296"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0is-6Z-nKU">

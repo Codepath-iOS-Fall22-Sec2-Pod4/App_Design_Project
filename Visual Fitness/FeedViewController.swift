@@ -23,6 +23,12 @@ class FeedViewController: UIViewController {
         textt.text = "You pressed Legs"
     }
     
+    
+    @IBAction func cardio(_ sender: UIButton) {
+        sender.backgroundColor = UIColor.clear
+        textt.text = "You pressed Cardio"
+    }
+    
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
                       let main = UIStoryboard(name: "Main", bundle: nil)
