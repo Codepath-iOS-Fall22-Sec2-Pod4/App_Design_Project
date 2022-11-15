@@ -70,10 +70,10 @@ This app will give a suggestion of food, exercise, treatment, nearby resturents 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/h5cDtyE9vG.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/M5rIdMYXfl.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Product Demo Video
-
+[Visual Fitness Demo](https://youtu.be/bwUQVNOorCY)
  
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
