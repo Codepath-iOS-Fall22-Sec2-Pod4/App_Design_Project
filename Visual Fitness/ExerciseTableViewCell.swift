@@ -10,6 +10,8 @@ import UIKit
 class ExerciseTableViewCell: UITableViewCell {
 
     @IBOutlet weak var exerciseCell: UILabel!
+    @IBOutlet weak var instructionCell: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

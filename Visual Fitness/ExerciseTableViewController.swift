@@ -42,7 +42,10 @@ class ExerciseTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseCell", for: indexPath) as! ExerciseTableViewCell
        let exercise = exercises[indexPath.row]["name"] as? String
+       let instruction = exercises[indexPath.row]["instructions"] as? String
+        
        cell.exerciseCell.text = exercise
+        cell.instructionCell.text = instruction
 
         return cell
     }

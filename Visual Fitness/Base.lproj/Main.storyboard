@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e8p-oK-4UQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e8p-oK-4UQ">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -210,25 +210,32 @@
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDi-RV-Jl8">
-                                            <rect key="frame" x="8" y="8" width="374" height="74"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="9Ia-SY-ntT"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercice" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDi-RV-Jl8">
+                                            <rect key="frame" x="8" y="8" width="374" height="23"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAr-ju-kzY">
+                                            <rect key="frame" x="8" y="39" width="374" height="21.666666666666671"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="WAr-ju-kzY" firstAttribute="leading" secondItem="r2j-P2-0VE" secondAttribute="leading" constant="8" id="76s-ef-UNx"/>
+                                        <constraint firstItem="WAr-ju-kzY" firstAttribute="top" secondItem="NDi-RV-Jl8" secondAttribute="bottom" constant="8" id="BSG-GL-iCF"/>
                                         <constraint firstItem="NDi-RV-Jl8" firstAttribute="top" secondItem="r2j-P2-0VE" secondAttribute="top" constant="8" id="M3V-g2-BPd"/>
                                         <constraint firstAttribute="trailing" secondItem="NDi-RV-Jl8" secondAttribute="trailing" constant="8" id="My7-G4-EDi"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WAr-ju-kzY" secondAttribute="bottom" id="R9k-sz-sF5"/>
                                         <constraint firstItem="NDi-RV-Jl8" firstAttribute="leading" secondItem="r2j-P2-0VE" secondAttribute="leading" constant="8" id="TYx-0H-Xax"/>
-                                        <constraint firstAttribute="bottom" secondItem="NDi-RV-Jl8" secondAttribute="bottom" constant="8" id="Zls-4c-L06"/>
+                                        <constraint firstAttribute="trailing" secondItem="WAr-ju-kzY" secondAttribute="trailing" constant="8" id="jfC-xu-MmM"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="exerciseCell" destination="NDi-RV-Jl8" id="tDA-9u-R57"/>
+                                    <outlet property="instructionCell" destination="WAr-ju-kzY" id="PXM-4B-s4J"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
