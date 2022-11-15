@@ -137,7 +137,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title=""/>
                                 <connections>
                                     <action selector="BP:" destination="0JH-gt-Zxy" eventType="touchUpInside" id="TiH-LI-PXy"/>
-                                    <segue destination="6b0-JR-CiK" kind="presentation" id="IjR-7y-byo"/>
+                                    <segue destination="bvX-xQ-YKq" kind="presentation" id="Lhu-jn-aZp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmL-AK-4kO" userLabel="Hand2">
@@ -194,20 +194,53 @@
             </objects>
             <point key="canvasLocation" x="1902" y="-21"/>
         </scene>
-        <!--Excersice View Controller-->
-        <scene sceneID="COd-lQ-9L6">
+        <!--Exercise Table View Controller-->
+        <scene sceneID="ECW-Lf-ieV">
             <objects>
-                <viewController id="6b0-JR-CiK" customClass="ExcersiceViewController" customModule="Visual_Fitness" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GXK-cg-i5S">
+                <tableViewController id="bvX-xQ-YKq" customClass="ExerciseTableViewController" customModule="Visual_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="7ss-6e-Mcu">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="wU5-PT-52z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Elh-Zm-GB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExerciseCell" rowHeight="90" id="3Hp-rz-B8l" customClass="ExerciseTableViewCell" customModule="Visual_Fitness" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="390" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Hp-rz-B8l" id="r2j-P2-0VE">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDi-RV-Jl8">
+                                            <rect key="frame" x="8" y="8" width="374" height="74"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="9Ia-SY-ntT"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NDi-RV-Jl8" firstAttribute="top" secondItem="r2j-P2-0VE" secondAttribute="top" constant="8" id="M3V-g2-BPd"/>
+                                        <constraint firstAttribute="trailing" secondItem="NDi-RV-Jl8" secondAttribute="trailing" constant="8" id="My7-G4-EDi"/>
+                                        <constraint firstItem="NDi-RV-Jl8" firstAttribute="leading" secondItem="r2j-P2-0VE" secondAttribute="leading" constant="8" id="TYx-0H-Xax"/>
+                                        <constraint firstAttribute="bottom" secondItem="NDi-RV-Jl8" secondAttribute="bottom" constant="8" id="Zls-4c-L06"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="exerciseCell" destination="NDi-RV-Jl8" id="tDA-9u-R57"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bvX-xQ-YKq" id="nYC-Im-OfM"/>
+                            <outlet property="delegate" destination="bvX-xQ-YKq" id="mEI-EA-UL0"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Rc-p7-qwo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2696" y="-16"/>
+            <point key="canvasLocation" x="2656.9230769230767" y="-21.327014218009477"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0is-6Z-nKU">
